@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wykryto zagrożenie!</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      padding: 20px;
+    }
+    .blinking {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="blinking">### SYSTEM ALERT ###</h1>
+  <p>Inicjalizacja ataku...</p>
+  <p>Wyszukiwanie urządzenia...</p>
+  <p>Urządzenie: iPhone 13 Pro</p>
+  <p>IP: 185.72.54.212</p>
+  <p>Lokalizacja: ul. Bluszczańska, Warszawa</p>
+  <p>Status: <span class="blinking">Połączenie przejęte</span></p>
+  <p>Rozpoczynanie pobierania plików...</p>
+  <p><span class="blinking">[██████████] 100%</span></p>
+  <p><strong>Uwaga:</strong> Twoje dane zostały przejęte. Żegnaj, kolego!</p>
+  <script>
+    setTimeout(() => {
+      alert("Twój system został zhakowany! To nie żart.");
+    }, 6000);
+  </script>
+</body>
+</html>
